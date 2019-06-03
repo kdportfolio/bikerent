@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-Medium.eot");
+  src: url("../fonts/GoogleSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GoogleSans-Medium.woff2") format("woff2"), url("../fonts/GoogleSans-Medium.woff") format("woff"), url("../fonts/GoogleSans-Medium.ttf") format("truetype"), url("../fonts/GoogleSans-Medium.svg#GoogleSans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-Regular.eot");
+  src: url("../fonts/GoogleSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GoogleSans-Regular.woff2") format("woff2"), url("../fonts/GoogleSans-Regular.woff") format("woff"), url("../fonts/GoogleSans-Regular.ttf") format("truetype"), url("../fonts/GoogleSans-Regular.svg#GoogleSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/GoogleSans-Bold.eot");
+  src: url("../fonts/GoogleSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GoogleSans-Bold.woff2") format("woff2"), url("../fonts/GoogleSans-Bold.woff") format("woff"), url("../fonts/GoogleSans-Bold.ttf") format("truetype"), url("../fonts/GoogleSans-Bold.svg#GoogleSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+input[type="file"] {
+  cursor: pointer; }
+  input[type="file"]::-webkit-file-upload-button, input[type="file"]::-moz-file-upload-button, input[type="file"]::-ms-file-upload-button, input[type="file"]::-o-file-upload-button {
+    cursor: pointer; }
+
+html body {
+  font-family: "Google Sans";
+  margin: 0;
+  padding-top: 101px; }
+
+html[lang] {
+  margin-top: 0 !important; }
+
+*::-moz-selection, *::-webkit-selection {
+  color: #fff;
+  background: #000; }
+*::-webkit-input-placeholder, *:-moz-placeholder, *::-moz-placeholder, *:-ms-input-placeholder {
+  color: #333333;
+  opacity: 1; }
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  outline: none;
+  color: #555; }
+  a::hover {
+    color: #000; }
+
+div a:hover, div a:active, div a:focus {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+
+button {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none !important; }
+  *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+ul, ol {
+  list-style: none;
+  font-family: "Google Sans";
+  margin: 0 !important;
+  padding: 0; }
+  ul li, ol li {
+    list-style: none;
+    font-family: "Google Sans"; }
+
+body .clearfix, body .clear {
+  clear: both;
+  line-height: 100%; }
+
+body .clearfix {
+  height: auto; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clr::after, ul::after, .clearfix::after, li::after {
+  clear: both;
+  display: block;
+  content: ""; }
+
+div input, div select, div textarea, div button {
+  font-family: "Google Sans"; }
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Google Sans";
+  line-height: 120%;
+  color: #333;
+  font-weight: bold;
+  margin: 0 0 15px;
+  text-align: center; }
+body::last-child {
+  margin-bottom: 0px; }
+
+body h1 {
+  font-size: 35px; }
+body h2 {
+  font-size: 22px; }
+body h3 {
+  font-size: 38px; }
+body h4 {
+  font-size: 16px; }
+body h5 {
+  font-size: 12px; }
+body h6 {
+  font-size: 10px; }
+
+div select {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+  div select option {
+    font-size: 13px;
+    color: #333;
+    padding: 2px 5px; }
+
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; }
+
+body p {
+  color: #333;
+  font-family: "Google Sans";
+  font-size: 18px;
+  line-height: 140%;
+  margin: 0 0 15px;
+  padding: 0; }
+body::empty {
+  margin: 0;
+  line-height: 0; }
+body::last-child {
+  margin-bottom: 0; }
+body strong {
+  font-weight: bold; }
+
+label em {
+  color: #ff0000;
+  display: inline-block;
+  font-style: normal;
+  vertical-align: top;
+  margin-left: 5px; }
+
+iframe {
+  display: block;
+  width: 100%; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  position: relative;
+  float: none; }
+  .container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+html.no-scroll {
+  overflow: hidden; }
+  html.no-scroll body {
+    overflow: hidden;
+    height: 100%; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+.btn, button {
+  display: inline-block;
+  border: none;
+  padding: 15px 12px;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+  cursor: pointer;
+  text-align: center;
+  min-width: 100px; }
+  .btn:hover, .btn:focus, button:hover, button:focus {
+    background: #0053ba;
+    color: #ffffff; }
+
+.section-gapping, section {
+  padding-bottom: 60px;
+  padding-top: 60px; }
+
+/*# sourceMappingURL=reset.css.map */

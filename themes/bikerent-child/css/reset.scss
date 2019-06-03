@@ -1,0 +1,269 @@
+@mixin transition($property){
+    -webkit-transition: $property;
+    -ms-transition: $property;
+    -moz-transition: $property;
+    -o-transition: $property;
+    transition: $property;
+}
+@mixin transform($property){
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    -moz-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+}
+@font-face {
+    font-family: "Google Sans";
+    src: url("../fonts/GoogleSans-Medium.eot");
+    src: url("../fonts/GoogleSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GoogleSans-Medium.woff2") format("woff2"), url("../fonts/GoogleSans-Medium.woff") format("woff"), url("../fonts/GoogleSans-Medium.ttf") format("truetype"), url("../fonts/GoogleSans-Medium.svg#GoogleSans-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Google Sans";
+    src: url("../fonts/GoogleSans-Regular.eot");
+    src: url("../fonts/GoogleSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GoogleSans-Regular.woff2") format("woff2"), url("../fonts/GoogleSans-Regular.woff") format("woff"), url("../fonts/GoogleSans-Regular.ttf") format("truetype"), url("../fonts/GoogleSans-Regular.svg#GoogleSans-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Google Sans";
+    src: url("../fonts/GoogleSans-Bold.eot");
+    src: url("../fonts/GoogleSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GoogleSans-Bold.woff2") format("woff2"), url("../fonts/GoogleSans-Bold.woff") format("woff"), url("../fonts/GoogleSans-Bold.ttf") format("truetype"), url("../fonts/GoogleSans-Bold.svg#GoogleSans-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+$font-stack: "Google Sans";
+$margin: 0;
+$grey: #333;
+$hidden: none;
+$font18: 18px;
+
+
+
+input[type="file"] {
+    &::-webkit-file-upload-button, &::-moz-file-upload-button, &::-ms-file-upload-button, &::-o-file-upload-button {
+        cursor: pointer;
+    }
+    cursor: pointer;
+}
+html{ 
+    body{
+        font-family: $font-stack;
+        margin: $margin;
+        padding-top: 99px;
+    }
+} 
+html[lang] {
+    margin-top: 0 !important;
+}
+* {
+    &::-moz-selection, &::-webkit-selection {
+        color: #fff;
+        background: #000;
+    }
+    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+        color: #333333;
+        opacity: 1;
+    }
+}
+a {
+    text-decoration: none;
+    @include transition(all 0.5s ease 0s);
+    outline: none;
+    color:#555;
+    &::hover{
+        color:#000;
+    }
+}
+
+div a {
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+        @include transition(all 0.5s ease 0s);           
+    }
+}
+
+button {
+    text-decoration: none;
+    @include transition(all 0.5s ease 0s);
+}
+*{
+    &::after, &::before{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box; 
+    }
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; 
+    outline:none!important;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display:block;
+}
+ul, ol {
+    li {
+        list-style: none;
+        font-family: $font-stack;
+    }
+    list-style: none;
+    font-family: $font-stack;
+    margin:$margin !important;
+    padding:0;
+}
+body {
+    .clearfix,.clear {
+        clear:both;
+        line-height:100%;
+    }
+}
+body {
+    .clearfix{
+        height:auto;
+    }
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clr, ul, .clearfix, li {
+    &::after{
+        clear:both;
+        display:block;
+        content:"";
+    }
+}
+div{
+    input, select, textarea, button{
+        font-family: $font-stack;
+    }
+}
+body{
+    h1, h2, h3, h4, h5, h6{
+        font-family: $font-stack;
+        line-height:120%;
+        color:$grey;
+        font-weight: bold;
+        margin:0 0 15px;
+        text-align: center;
+    }
+    &::last-child{
+        margin-bottom: 0px;
+    }
+}
+body {
+    h1 { font-size: 35px;} 
+    h2 { font-size: 22px;}
+    h3 { font-size: 38px;}
+    h4 { font-size: 16px;}
+    h5 { font-size: 12px;}
+    h6 { font-size: 10px;}
+}
+div {
+    select {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        option {
+            font-size: 13px;
+            color:#333;
+            padding: 2px 5px;
+        }
+    }
+}
+img {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height:auto;
+}
+body {
+    p{
+        color: $grey;
+        font-family: $font-stack;
+        font-size:$font18;
+        line-height: 140%;
+        margin: 0 0 15px;
+        padding: 0;
+    }
+    &::empty{
+        margin:0;
+        line-height:0;
+    }
+    &::last-child{
+        margin-bottom:0;
+    }
+    strong {
+        font-weight: bold;
+    }
+}
+label {
+    em {
+        color: #ff0000;
+        display: inline-block;
+        font-style: normal;
+        vertical-align: top;
+        margin-left:5px;
+    }
+}
+iframe{
+    display:block;
+    width:100%;
+}
+.container{
+    width:100%;
+    max-width:1200px;
+    padding-left:15px;
+    padding-right:15px;
+    margin:0 auto;
+    position:relative;
+    float:none;
+    &::after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+}
+html.no-scroll{
+    overflow: hidden;
+    body {
+        overflow: hidden;
+        height:100%;
+    }
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.btn, button {
+    display: inline-block;
+    border: none;
+    padding: 15px 12px;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    cursor: pointer;
+    text-align: center;
+    min-width: 100px;
+    &:hover, &:focus{
+        background: #0053ba;
+        color: #ffffff;
+    }
+}
+.section-gapping,section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
